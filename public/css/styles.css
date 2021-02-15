@@ -1,0 +1,13 @@
+#inventory-app{
+    font-family: Lato Extended,Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+table.bordered-table {
+    border-collapse: collapse; 
+    width: 100%;
+}
+
+table.bordered-table th, td {
+    border: 1px solid silver; 
+    padding: 4px;
+}
