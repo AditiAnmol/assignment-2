@@ -1,10 +1,10 @@
 {
   "name": "assignment-2",
   "version": "1.0.0",
-  "description": "PRO MERN STACK ASSIGNMENT TWO - SIMPLE INVENTORY MANAGEMENT SYSTEM",
+  "description": "PRO MERN STACK ASSIGNMENT TWO & THREE - SIMPLE INVENTORY MANAGEMENT SYSTEM",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon -w server server/server.js",
+    "start": "nodemon -w server -e js,graphql server/server.js",
     "compile": "babel src --out-dir public",
     "watch": "babel src --out-dir public --watch --verbose",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,8 +20,10 @@
   },
   "homepage": "https://github.com/AditiAnmol/assignment-2#readme",
   "dependencies": {
+    "apollo-server-express": "^2.3.0",
     "express": "^4.17.1",
-    "nodemon": "^1.18.9"
+    "graphql": "^0.13.2",
+    "nodemon": "^1.19.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
