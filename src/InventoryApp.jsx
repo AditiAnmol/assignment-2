@@ -38,7 +38,8 @@ class ProductAdd extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
     handlePriceChange(e) {
-        this.setState({ value: e.target.value });
+        const priceValue = e.target.value.substring(1);
+        this.setState({ value: `$${priceValue}` });
     }
     handleSubmit(e) {
         e.preventDefault();

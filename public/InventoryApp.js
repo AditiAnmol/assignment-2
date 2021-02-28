@@ -70,8 +70,9 @@ var ProductAdd = /*#__PURE__*/function (_React$Component) {
   _createClass(ProductAdd, [{
     key: "handlePriceChange",
     value: function handlePriceChange(e) {
+      var priceValue = e.target.value.substring(1);
       this.setState({
-        value: e.target.value
+        value: "$".concat(priceValue)
       });
     }
   }, {
